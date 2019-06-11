@@ -1,0 +1,31 @@
+<h1>당신이 입력한 텍스트는 <!--총단어수-->{{ total }} 단어로 구성되어 있습니다.</h1>
+
+<a href="{% url 'home' %}"> 다시하기 </a>
+
+<h1>입력한 텍스트: </h1>
+<!-- 입력받은 전체 텍스트 -->
+{{ fulltext }}
+
+<h1>단어 카운트:</h1>
+<!-- '단어' - '단어나온 횟수' -->
+{% for word, countTotal in dictionary %}
+{{ word }} - {{ countTotal }}
+<br>
+{% endfor %}
+
+<br>
+<br>
+<br>
+<div id="제작자">
+    <table>
+    <tbody>
+      <tr>
+        <td rowspan="2" width="70"><img src="C:\Users\사용자\Desktop\멋쟁이사자처럼\멋사 2차 과제" height="60"></td>
+        <td><strong>Oh JeGyu</strong>
+        </td>
+      </tr>
+      <tr>
+         <td width="255">인하대 멋쟁이 사자처럼 7기</td>
+      </tr>
+    </tbody>
+    </table>
